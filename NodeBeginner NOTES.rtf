@@ -1,8 +1,9 @@
-Node.js is really two things: a runtime environment and a library
+-Node.js is really two things: a runtime environment and a library
 • We want to serve web pages, therefore we need an HTTP server
 • Our server will need to answer differently to requests, depending on which URL the request was asking for, thus we need some kind of router in order to map requests to request handlers
 • To fullfill the requests that arrived at the server and have been routed using the router, we need actual request handlers
 • The router probably should also treat any incoming POST data and give it to the request handlers in a convenient form, thus we need request data handling
 • We not only want to handle requests for URLs, we also want to display content when these URLs are requested, which means we need some kind of view logic the request handlers can use in order to send content to the user’s browser
 • Last but not least, the user will be able to upload images, so we are going to need some kind of upload handling which takes care of the details
-With Node.js, we not only implement our application, we also implement the whole HTTP server. In fact, our web application and its web server are basically the same.
+-With Node.js, we not only implement our application, we also implement the whole HTTP server. In fact, our web application and its web server are basically the same.
+-Making different HTTP requests point at different parts of ourcode is called “routing”
