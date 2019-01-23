@@ -7,3 +7,4 @@
 • Last but not least, the user will be able to upload images, so we are going to need some kind of upload handling which takes care of the details
 -With Node.js, we not only implement our application, we also implement the whole HTTP server. In fact, our web application and its web server are basically the same.
 -Making different HTTP requests point at different parts of ourcode is called “routing”
+-We need to be able to feed the requested URL and possible additional GET and POST parameters into our router, and based on these the router then needs to be able to decide which code to execute (this “code to execute” is the third part of our application: a collection of request handlers that do the actual work when a request is received).
